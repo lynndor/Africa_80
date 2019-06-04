@@ -4,7 +4,7 @@ const EventsPage = () =>{
 	return (
 		<Layout>
 			<div className="content">
-				<h2>EventsPage Component</h2>
+				<h2>Events Page </h2>
 			</div>		
 		</Layout>
 	

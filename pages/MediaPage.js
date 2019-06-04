@@ -4,7 +4,7 @@ const MediaPage = () =>{
 	return (
 		<Layout>
 			<div className="content">
-				<h2>MediaPage Component</h2>
+				<h2>Media Page </h2>
 			</div>		
 		</Layout>
 	

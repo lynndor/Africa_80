@@ -4,7 +4,7 @@ const Donate = () =>{
 	return (
 		<Layout>
 			<div className="content">
-				<h2>Donate Component</h2>
+				<h2>Donate Page</h2>
 			</div>		
 		</Layout>
 	

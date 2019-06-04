@@ -4,7 +4,7 @@ const OurStoryPage = () =>{
 	return (
 		<Layout>
 			<div className="content">
-				<h2>OurStoryPage Component</h2>
+				<h2>Our Story Page </h2>
 			</div>		
 		</Layout>
 	

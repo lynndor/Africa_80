@@ -4,7 +4,7 @@ const ContactPage = () =>{
 	return (
 		<Layout>
 			<div className="content">
-				<h2>ContactPage Component</h2>
+				<h2>Contact Page </h2>
 			</div>		
 		</Layout>
 	
