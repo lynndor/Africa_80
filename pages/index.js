@@ -1,11 +1,13 @@
 import Layout from '../components/Layout';
+import ImageSlider from '../components/image_slider';
 
 const Home = () =>{
 	return (
 		<Layout>
-			<div className="content">
+			<React.Fragment>
+				<ImageSlider/>
 				<h2>Home page</h2>
-			</div>		
+			</React.Fragment>		
 		</Layout>
 	
 	)
