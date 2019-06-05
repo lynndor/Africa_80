@@ -1,13 +1,14 @@
 import Layout from '../components/Layout';
+import Story from '../components/ourstory/index';
 
-const OurStoryPage = () =>{
+const OurStoryPage = () => {
 	return (
 		<Layout>
 			<div className="content">
-				<h2>Our Story Page </h2>
-			</div>		
+				<Story />
+			</div>
 		</Layout>
-	
+
 	)
 }
 

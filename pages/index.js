@@ -1,15 +1,15 @@
 import Layout from '../components/Layout';
-import ImageSlider from '../components/image_slider';
+import ImageSlider from '../components/image_slider/index';
 
-const Home = () =>{
+const Home = () => {
 	return (
 		<Layout>
 			<React.Fragment>
-				<ImageSlider/>
+				<ImageSlider />
 				<h2>Home page</h2>
-			</React.Fragment>		
+			</React.Fragment>
 		</Layout>
-	
+
 	)
 }
 

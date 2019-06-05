@@ -1,13 +1,14 @@
 import Layout from '../components/Layout';
+import Form from '../components/contact/index';
 
-const ContactPage = () =>{
+const ContactPage = () => {
 	return (
 		<Layout>
 			<div className="content">
-				<h2>Contact Page </h2>
-			</div>		
+				<Form />
+			</div>
 		</Layout>
-	
+
 	)
 }
 
