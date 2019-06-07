@@ -7,18 +7,12 @@ const Footer = () => {
             <div className='col-lg-5 col-md-6 col-sm-6'>
               <div className='single-footer-widget tp_widgets'>
                 <h4 className='footer_title large_title'>About Us</h4>
-                <p>
-                  Do you want to be even more successful? Learn to love learning
-                  and growth. The more effort you put into improving your
-                  skills, the bigger the payoff you will get. Realize that
-                  things will be hard at first, but the rewards will be worth
-                  it.
-                </p>
+
                 <p>
                   Copyright &copy;
-                  {document.write(new Date().getFullYear())}; All rights
-                  reserved | This template is made with{" "}
-                  <i className='fa fa-heart-o' aria-hidden='true' /> by{" "}
+                  {new Date().getFullYear()} All rights reserved | This website
+                  is made with{" "}
+                  <i className='fa fa-heart-o' aria-hidden='true' />
                   <a href='https://colorlib.com' target='_blank'>
                     CodeBrik
                   </a>

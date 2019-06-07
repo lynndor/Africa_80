@@ -26,57 +26,30 @@ const Header = () => {
           >
             <ul className='navbar-nav'>
               <li>
-                <a className='active' href='index.html'>
-                  Home
-                </a>
+                <Link href='/'>
+                  <a className='active'> Home </a>
+                </Link>
               </li>
               <li>
-                <a href='about.html'>About</a>
+                <Link href='/OurStoryPage'>
+                  <a>About</a>
+                </Link>
               </li>
               <li>
-                <a href='causes.html'>Causes</a>
+                <Link href='causes.html'>
+                  <a>Causes</a>
+                </Link>
               </li>
               <li>
-                <a href='event.html'>Event</a>
+                <Link href='event.html'>
+                  <a>Event</a>
+                </Link>
               </li>
-              <li className='dropdown'>
-                <a
-                  className='dropdown-toggle'
-                  href='#'
-                  id='navbardrop'
-                  data-toggle='dropdown'
-                >
-                  Pages
-                </a>
-                <div className='dropdown-menu'>
-                  <a className='dropdown-item' href='event-details.html'>
-                    Event Details
-                  </a>
-                  <a className='dropdown-item' href='elements.html'>
-                    Elements
-                  </a>
-                </div>
-              </li>
-              <li className='dropdown'>
-                <a
-                  className='dropdown-toggle'
-                  href='#'
-                  id='navbardrop'
-                  data-toggle='dropdown'
-                >
-                  Blog
-                </a>
-                <div className='dropdown-menu'>
-                  <a className='dropdown-item' href='blog.html'>
-                    Blog
-                  </a>
-                  <a className='dropdown-item' href='blog-details.html'>
-                    Blog Details
-                  </a>
-                </div>
-              </li>
+
               <li>
-                <a href='contact.html'>Contact</a>
+                <Link href='contact.html'>
+                  <a>Contact</a>
+                </Link>
               </li>
             </ul>
           </div>
