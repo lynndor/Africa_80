@@ -9,24 +9,15 @@ const Layout = props => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />>
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet" />
+         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400" rel="stylesheet" />>
 
-
-        <link rel="stylesheet" href="static/fonts/icomoon/style.css" />
-
-        <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="static/css/themify-icons.css" />
+        <link rel="stylesheet" href="static/css/bootstrap.css" />
+        <link rel="stylesheet" href="static/css/owl.carousel.css" />
         <link rel="stylesheet" href="static/css/magnific-popup.css" />
-        <link rel="stylesheet" href="static/css/jquery-ui.css" />
-        <link rel="stylesheet" href="static/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="static/css/owl.theme.default.min.css" />
-
-        <link rel="stylesheet" href="static/css/bootstrap-datepicker.css" />
-
-        <link rel="stylesheet" href="static/fonts/flaticon/font/flaticon.css" />
-
-        <link rel="stylesheet" href="static/css/aos.css" />
-
-        <link rel="stylesheet" href="static/css/style.css" />
+        <link rel="stylesheet" href="static/css/nice-select.css" />
+        <link rel="stylesheet" href="static/css/main.css" />
       </Head>
 
       <Header />
@@ -34,17 +25,18 @@ const Layout = props => {
       <Footer />
 
 
-      <script src="static/js/jquery-3.3.1.min.js"></script>
-      <script src="static/js/jquery-ui.js"></script>
-      <script src="static/js/popper.min.js"></script>
-      <script src="static/js/bootstrap.min.js"></script>
+      <script src="static/js/vendor/jquery-2.2.4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+      <script src="static/js/vendor/bootstrap.min.js"></script>
+      <script src="static/js/jquery.ajaxchimp.min.js"></script>
+      <script src="static/js/parallax.min.js"></script>
       <script src="static/js/owl.carousel.min.js"></script>
+      <script src="static/js/isotope.pkgd.min.js"></script>
+      <script src="static/js/jquery.nice-select.min.js"></script>
       <script src="static/js/jquery.magnific-popup.min.js"></script>
+      <script src="static/js/countdown.js"></script>
       <script src="static/js/jquery.sticky.js"></script>
-      <script src="static/js/jquery.waypoints.min.js"></script>
-      <script src="static/js/jquery.animateNumber.min.js"></script>
-      <script src="static/js/aos.js"></script>
-
       <script src="static/js/main.js"></script>
     </div>
   )
