@@ -2,64 +2,87 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className=''>
-      <div className=''>
-        <div className=''>
-          <div className='site-logo'>
-            <Link href='/' prefetch>
-              <a className='text-black'>
-                <span className='text-primary'>Africa 80</span>
-              </a>
-            </Link>
-          </div>
+    <header className='default-header'>
+      <nav className='navbar navbar-expand-lg navbar-light'>
+        <div className='container'>
+          <a className='navbar-brand' href='index.html'>
+            <img src='img/logo.png' alt='' />
+          </a>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span className='fa fa-bars' />
+          </button>
 
-          <div className=''>
-            <ul className=''>
+          <div
+            className='collapse navbar-collapse justify-content-end align-items-center'
+            id='navbarSupportedContent'
+          >
+            <ul className='navbar-nav'>
               <li>
-                <Link href='/' prefetch>
-                  <a className='nav-link'>Home</a>
-                </Link>
+                <a className='active' href='index.html'>
+                  Home
+                </a>
               </li>
               <li>
-                <Link href='/OurStoryPage' as='our-story'>
-                  <a className='nav-link'>Our Story</a>
-                </Link>
+                <a href='about.html'>About</a>
               </li>
               <li>
-                <Link href='/AdvisoryBoardPage' as='board'>
-                  <a className='nav-link'>Advisory Board</a>
-                </Link>
+                <a href='causes.html'>Causes</a>
               </li>
               <li>
-                <Link href='/NetworksPage' as='networks'>
-                  <a className='nav-link'>Africa80 Networks</a>
-                </Link>
+                <a href='event.html'>Event</a>
+              </li>
+              <li className='dropdown'>
+                <a
+                  className='dropdown-toggle'
+                  href='#'
+                  id='navbardrop'
+                  data-toggle='dropdown'
+                >
+                  Pages
+                </a>
+                <div className='dropdown-menu'>
+                  <a className='dropdown-item' href='event-details.html'>
+                    Event Details
+                  </a>
+                  <a className='dropdown-item' href='elements.html'>
+                    Elements
+                  </a>
+                </div>
+              </li>
+              <li className='dropdown'>
+                <a
+                  className='dropdown-toggle'
+                  href='#'
+                  id='navbardrop'
+                  data-toggle='dropdown'
+                >
+                  Blog
+                </a>
+                <div className='dropdown-menu'>
+                  <a className='dropdown-item' href='blog.html'>
+                    Blog
+                  </a>
+                  <a className='dropdown-item' href='blog-details.html'>
+                    Blog Details
+                  </a>
+                </div>
               </li>
               <li>
-                <Link href='/EventsPage' as='events'>
-                  <a className='nav-link'>Events</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/MediaPage' as='news-and-media'>
-                  <a className='nav-link'>News and Media</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/ContactPage' as='contact-us'>
-                  <a className='nav-link'>Contact Us</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/Donate' as='donate'>
-                  <a className='nav-link'>Donate</a>
-                </Link>
+                <a href='contact.html'>Contact</a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
