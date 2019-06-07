@@ -3,6 +3,10 @@
     "static/development/dll/dll_599a58a60c43245180de.js"
   ],
   "pages": {
+    "/ContactPage": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/OurStoryPage": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
