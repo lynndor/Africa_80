@@ -2,70 +2,61 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="site-navbar js-sticky-header site-navbar-target">
-      <div className="container">
+    <header className='default-header'>
+      <nav className='navbar navbar-expand-lg navbar-light'>
+        <div className='container'>
+          <a className='navbar-brand' href='index.html'>
+            <img src='img/logo.png' alt='' />
+          </a>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span className='fa fa-bars' />
+          </button>
 
-        <div className="row align-items-center position-relative">
-          <div className="site-logo">
+          <div
+            className='collapse navbar-collapse justify-content-end align-items-center'
+            id='navbarSupportedContent'
+          >
+            <ul className='navbar-nav'>
+              <li>
+                <Link href='/'>
+                  <a className='active'> Home </a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/OurStoryPage'>
+                  <a>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='causes.html'>
+                  <a>Causes</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='event.html'>
+                  <a>Event</a>
+                </Link>
+              </li>
 
-            <Link href="/" prefetch >
-              <a className="text-black">
-                <span className="text-primary">Africa 80</span>
-              </a>
-            </Link>
-
-          </div>
-
-          <div className="site-navigation text-center ml-auto">
-            <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
               <li>
-                <Link href="/" prefetch >
-                  <a className="nav-link">Home</a>
+                <Link href='contact.html'>
+                  <a>Contact</a>
                 </Link>
               </li>
-              <li>
-                <Link href="/OurStoryPage" as="our-story">
-                  <a className="nav-link">Our Story</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/AdvisoryBoardPage" as="board">
-                <a className="nav-link">Advisory Board</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/NetworksPage" as="networks">
-                <a className="nav-link">Africa80 Networks</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/EventsPage" as="events">
-                <a className="nav-link">Events</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/MediaPage" as="news-and-media">
-                <a className="nav-link">News and Media</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/ContactPage" as="contact-us">
-                <a className="nav-link">Contact Us</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/Donate" as="donate">
-                <a className="nav-link">Donate</a></Link>
-              </li> 
             </ul>
-   
           </div>
-
         </div>
-        
-      </div>
-    </div>
-  )
-}
+      </nav>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
