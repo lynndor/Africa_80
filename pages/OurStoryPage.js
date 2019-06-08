@@ -1,15 +1,20 @@
 import Layout from "../components/Layout";
 import Story from "../components/ourstory/index";
+import Mini from '../components/header/mini_slider';
 
 const OurStoryPage = () => {
-  return (
-    <Layout>
-      <section class='about_area lite_bg'>
+
+
+   return (
+     
+       <Layout>
+    < Mini /> 
+       <section class='about_area lite_bg'>
         <div class='container'>
-          <div class='row align-items-end'>
-            <div class='col-lg-5'>
-              <div class='about_details lite_bg'>
-                <h2>We Are A Non-profit Organization </h2>
+         <div class='row align-items-end'>
+          <div class='col-lg-5'>
+          <div class='about_details lite_bg'>
+             <h2>We Are A Non-profit Organization </h2>
                 <p class='top_text'>
                   Herb saw set gathered herb image lights it wherein without an
                   evenin you're image moving spirit dominion

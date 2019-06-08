@@ -25,13 +25,13 @@ const Header = () => {
             id='navbarSupportedContent'
           >
             <ul className='navbar-nav'>
-              <li>
+                  <li>
                 <Link href='/'>
                   <a className='active'> Home </a>
                 </Link>
               </li>
               <li>
-                <Link href='/OurStoryPage'>
+                    <Link href='/OurStoryPage'>
                   <a>About</a>
                 </Link>
               </li>
@@ -39,24 +39,24 @@ const Header = () => {
                 <Link href='causes.html'>
                   <a>Causes</a>
                 </Link>
-              </li>
+          </li>
               <li>
                 <Link href='event.html'>
                   <a>Event</a>
                 </Link>
-              </li>
+      </li>
 
               <li>
-                <Link href='contact.html'>
+        <Link href='/ContactPage'>
                   <a>Contact</a>
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
-};
-
-export default Header;
+          </div>  
+        </div>    
+      </nav>        
+    </header > 
+    );      
+};    
+    
+  export default Header;

@@ -28,17 +28,13 @@ const Layout = props => {
         <link rel='stylesheet' href='static/css/magnific-popup.css' />
         <link rel='stylesheet' href='static/css/nice-select.css' />
         <link rel='stylesheet' href='static/css/main.css' />
+
       </Head>
       <Header />
       {props.children}
       <Footer />
 
       <script src='js/vendor/jquery-2.2.4.min.js' />
-      {/* <script
-        src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'
-        integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4'
-        crossorigin='anonymous'
-      /> */}
       <script src='js/vendor/bootstrap.min.js' />
       <script src='js/jquery.ajaxchimp.min.js' />
       <script src='js/parallax.min.js' />
@@ -49,6 +45,7 @@ const Layout = props => {
       <script src='js/countdown.js' />
       <script src='js/jquery.sticky.js' />
       <script src='js/main.js' />
+
     </div>
   );
 };
