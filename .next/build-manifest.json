@@ -3,11 +3,11 @@
     "static/development/dll/dll_599a58a60c43245180de.js"
   ],
   "pages": {
-    "/ContactPage": [
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/OurStoryPage": [
+    "/Donate": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -16,6 +16,10 @@
       "static/runtime/main.js"
     ],
     "/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

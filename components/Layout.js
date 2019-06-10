@@ -34,17 +34,17 @@ const Layout = props => {
       {props.children}
       <Footer />
 
-      <script src='js/vendor/jquery-2.2.4.min.js' />
-      <script src='js/vendor/bootstrap.min.js' />
-      <script src='js/jquery.ajaxchimp.min.js' />
-      <script src='js/parallax.min.js' />
-      <script src='js/owl.carousel.min.js' />
-      <script src='js/isotope.pkgd.min.js' />
-      <script src='js/jquery.nice-select.min.js' />
-      <script src='js/jquery.magnific-popup.min.js' />
-      <script src='js/countdown.js' />
-      <script src='js/jquery.sticky.js' />
-      <script src='js/main.js' />
+      <script src='static/js/vendor/jquery-2.2.4.min.js' />
+      <script src='static/js/vendor/bootstrap.min.js' />
+      <script src='static/js/jquery.ajaxchimp.min.js' />
+      <script src='static/js/parallax.min.js' />
+      <script src='static/js/owl.carousel.min.js' />
+      <script src='static/js/isotope.pkgd.min.js' />
+      <script src='static/js/jquery.nice-select.min.js' />
+      <script src='static/js/jquery.magnific-popup.min.js' />
+      <script src='static/js/countdown.js' />
+      <script src='static/js/jquery.sticky.js' />
+      <script src='static/js/main.js' />
 
     </div>
   );
