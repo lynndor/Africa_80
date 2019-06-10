@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Mini from "../components/header/mini_slider";
 import MainEvent from "../components/Events/eventParent";
+import Subscribe from "../components/contact/subscribe";
 
 const EventsPage = () => {
   return (
@@ -8,6 +9,7 @@ const EventsPage = () => {
       <div className="content">
         <Mini />
         <MainEvent />
+        <Subscribe />
       </div>
     </Layout>
   );

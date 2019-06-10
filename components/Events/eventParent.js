@@ -18,7 +18,11 @@ const MainEvent = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6 col-md-6">
                   <figure>
-                    <img className="img-fluid w-100" src="" alt="" />
+                    <img
+                      className="img-fluid w-100"
+                      src="/static/img/event/e1.jpg"
+                      alt=""
+                    />
                     <div className="date">17 Mar</div>
                   </figure>
                 </div>
@@ -60,7 +64,7 @@ const MainEvent = () => {
                   <figure>
                     <img
                       className="img-fluid w-100"
-                      src="img/event/e2.jpg"
+                      src="/static/img/event/e2.jpg"
                       alt=""
                     />
                     <div className="date">19 May</div>
@@ -105,7 +109,7 @@ const MainEvent = () => {
                   <figure>
                     <img
                       className="img-fluid w-100"
-                      src="img/event/e3.jpg"
+                      src="/static/img/event/e3.jpg"
                       alt=""
                     />
                     <div className="date">10 June</div>
@@ -150,7 +154,7 @@ const MainEvent = () => {
                   <figure>
                     <img
                       className="img-fluid w-100"
-                      src="img/event/e4.jpg"
+                      src="/static/img/event/e4.jpg"
                       alt=""
                     />
                     <div className="date">18 July</div>
