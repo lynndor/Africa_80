@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Mini from "../components/header/mini_slider";
+import Mini from "../components/mini_slider";
 import MainEvent from "../components/Events/eventParent";
 import Subscribe from "../components/contact/subscribe";
 
