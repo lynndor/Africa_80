@@ -7,30 +7,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/AdvisoryBoardPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/ContactPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/Donate": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/EventsPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/MediaPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/OurStoryPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -40,10 +16,6 @@
       "static/runtime/main.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
