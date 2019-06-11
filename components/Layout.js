@@ -15,7 +15,6 @@ const Layout = props => {
         <meta name='author' content='codebrik' />
         <meta name='description' content='' />
         <meta name='keywords' content='' />
-        <meta charset='UTF-8' />
         <title>Africa 80</title>
         <link
           href='https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400'
@@ -28,7 +27,6 @@ const Layout = props => {
         <link rel='stylesheet' href='static/css/magnific-popup.css' />
         <link rel='stylesheet' href='static/css/nice-select.css' />
         <link rel='stylesheet' href='static/css/main.css' />
-
       </Head>
       <Header />
       {props.children}
@@ -45,7 +43,6 @@ const Layout = props => {
       <script src='static/js/countdown.js' />
       <script src='static/js/jquery.sticky.js' />
       <script src='static/js/main.js' />
-
     </div>
   );
 };

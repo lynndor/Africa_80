@@ -1,30 +1,62 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
-
+import ImageSlider from "../components/image_slider";
+import DonateCard from "../components/donate";
+import FeatureItem from "../components/feature";
 const Home = () => {
+  // Dontate state
+  const [donate_items, setDonateItems] = useState([
+    {
+      image: "/static/img/causes/c1.jpg",
+      tag: "Education",
+      card_title: "Above Hath Fifth Of Open Meat fourth shall meat cattle.",
+      amount_raised: "Raised: $1533",
+      goal_amount: "Goal: $2500",
+      total_donors: 89
+    },
+    {
+      image: "/static/img/causes/c2.jpg",
+      tag: "Education",
+      card_title: "Above Hath Fifth Of Open Meat fourth shall meat cattle.",
+      amount_raised: "Raised: $1533",
+      goal_amount: "Goal: $2500",
+      total_donors: 89
+    },
+    {
+      image: "/static/img/causes/c3.jpg",
+      tag: "Education",
+      card_title: "Above Hath Fifth Of Open Meat fourth shall meat cattle.",
+      amount_raised: "Raised: $1533",
+      goal_amount: "Goal: $2500",
+      total_donors: 89
+    }
+  ]);
+
+  // Feature State
+
+  const [feature_items, setFeature] = useState([
+    {
+      feature_icon: "fi flaticon-compass",
+      title: "Give Donation",
+      feature_content:
+        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+    },
+    {
+      feature_icon: "fi flaticon-desk",
+      title: "Give Inspiration",
+      feature_content:
+        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+    },
+    {
+      feature_icon: "fi flaticon-bathroom",
+      title: "Become a Volunteer",
+      feature_content:
+        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+    }
+  ]);
   return (
     <Layout>
-      <section
-        className='home-banner-area relative'
-        id='home'
-        data-parallax='scroll'
-        data-image-src='img/header-bg.jpg'
-      >
-        <div className='overlay-bg overlay' />
-        <div className='container'>
-          <div className='row fullscreen justify-content-lg-end'>
-            <div className='banner-content col-lg-7'>
-              <h1>
-                Save the African <br /> children
-              </h1>
-              <h4>More charity. More better life.</h4>
-              <a href='#' className='primary-btn'>
-                Join us
-                <i className='ti-angle-right ml-1' />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ImageSlider />
 
       <section className='about_area lite_bg'>
         <div className='container'>
@@ -99,66 +131,30 @@ const Home = () => {
         </div>
       </section>
 
-      <section class='features-area section-gap-top'>
-        <div class='container'>
-          <div class='row justify-content-center'>
-            <div class='col-lg-6'>
-              <div class='section-title'>
+      <section className='features-area section-gap-top'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-lg-6'>
+              <div className='section-title'>
                 <h2>
                   How <span>Could</span> You Help
                 </h2>
               </div>
             </div>
           </div>
-          <div class='row feature_inner'>
-            <div class='col-lg-4 col-md-6'>
-              <div class='feature-item'>
-                <i class='fi flaticon-compass' />
-                <h4>Give Donation</h4>
-                <p>
-                  Multiply is rule light dominion given midst a living i set
-                  every bring also of rule Set light fifth best bearing.
-                </p>
-                <a href='#' class='primary-btn2'>
-                  Learn more
-                </a>
-              </div>
-            </div>
-            <div class='col-lg-4 col-md-6'>
-              <div class='feature-item'>
-                <i class='fi flaticon-desk' />
-                <h4>Give Inspiration</h4>
-                <p>
-                  Multiply is rule light dominion given midst a living i set
-                  every bring also of rule Set light fifth best bearing.
-                </p>
-                <a href='#' class='primary-btn2'>
-                  Learn more
-                </a>
-              </div>
-            </div>
-            <div class='col-lg-4 col-md-6'>
-              <div class='feature-item'>
-                <i class='fi flaticon-bathroom' />
-                <h4>Become Bolunteer</h4>
-                <p>
-                  Multiply is rule light dominion given midst a living i set
-                  every bring also of rule Set light fifth best bearing.
-                </p>
-                <a href='#' class='primary-btn2'>
-                  Learn more
-                </a>
-              </div>
-            </div>
+          <div className='row feature_inner'>
+            {feature_items.map((item, index) => (
+              <FeatureItem item={item} key={index} />
+            ))}
           </div>
         </div>
       </section>
 
-      <section class='popular-cause-area section-gap-top'>
-        <div class='container'>
-          <div class='row justify-content-center'>
-            <div class='col-lg-6'>
-              <div class='section-title'>
+      <section className='popular-cause-area section-gap-top'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-lg-6'>
+              <div className='section-title'>
                 <h2>
                   <span>Popular</span> Causes
                 </h2>
@@ -166,106 +162,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div class='row'>
-            <div class='col-lg-4 col-md-6'>
-              <div class='card single-popular-cause'>
-                <div class='card-body'>
-                  <figure>
-                    <img
-                      class='card-img-top img-fluid'
-                      src='img/causes/c1.jpg'
-                      alt='Card image cap'
-                    />
-                  </figure>
-                  <div class='card_inner_body'>
-                    <div class='tag'>Education</div>
-                    <h4 class='card-title'>
-                      Above Hath Fifth Of Open Meat fourth shall meat cattle.
-                    </h4>
-                    <div class='d-flex justify-content-between raised_goal'>
-                      <p>Raised: $1533</p>
-                      <p>
-                        <span>Goal: $2500</span>
-                      </p>
-                    </div>
-                    <div class='d-flex justify-content-between donation align-items-center'>
-                      <a href='#' class='primary-btn'>
-                        donate
-                      </a>
-                      <p>
-                        <span class='ti-heart mr-1' /> 89 Donors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class='col-lg-4 col-md-6'>
-              <div class='card single-popular-cause'>
-                <div class='card-body'>
-                  <figure>
-                    <img
-                      class='card-img-top img-fluid'
-                      src='img/causes/c2.jpg'
-                      alt='Card image cap'
-                    />
-                  </figure>
-                  <div class='card_inner_body'>
-                    <div class='tag'>Education</div>
-                    <h4 class='card-title'>
-                      Above Hath Fifth Of Open Meat fourth shall meat cattle.
-                    </h4>
-                    <div class='d-flex justify-content-between raised_goal'>
-                      <p>Raised: $1533</p>
-                      <p>
-                        <span>Goal: $2500</span>
-                      </p>
-                    </div>
-                    <div class='d-flex justify-content-between donation align-items-center'>
-                      <a href='#' class='primary-btn'>
-                        donate
-                      </a>
-                      <p>
-                        <span class='ti-heart mr-1' /> 89 Donors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class='col-lg-4 col-md-6'>
-              <div class='card single-popular-cause'>
-                <div class='card-body'>
-                  <figure>
-                    <img
-                      class='card-img-top img-fluid'
-                      src='img/causes/c3.jpg'
-                      alt='Card image cap'
-                    />
-                  </figure>
-                  <div class='card_inner_body'>
-                    <div class='tag'>Education</div>
-                    <h4 class='card-title'>
-                      Above Hath Fifth Of Open Meat fourth shall meat cattle.
-                    </h4>
-                    <div class='d-flex justify-content-between raised_goal'>
-                      <p>Raised: $1533</p>
-                      <p>
-                        <span>Goal: $2500</span>
-                      </p>
-                    </div>
-                    <div class='d-flex justify-content-between donation align-items-center'>
-                      <a href='#' class='primary-btn'>
-                        donate
-                      </a>
-                      <p>
-                        <span class='ti-heart mr-1' /> 89 Donors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className='row'>
+            {donate_items.map((item, index) => (
+              <DonateCard item={item} key={index} />
+            ))}
           </div>
         </div>
       </section>
