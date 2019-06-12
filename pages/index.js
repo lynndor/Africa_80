@@ -36,7 +36,7 @@ const Home = () => {
 
   // Feature State
 
-  const [feature_items, setFeature] = useState([
+  const [feature_items, setFeatures] = useState([
     {
       feature_icon: "fi flaticon-compass",
       title: "Give Donation",

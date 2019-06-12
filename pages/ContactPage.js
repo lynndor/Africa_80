@@ -5,7 +5,7 @@ import ImageSlider from "../components/image_slider/";
 const ContactPage = () => {
   return (
     <Layout>
-      <div className='content'>
+      <div>
         <ImageSlider />
         <Form />
       </div>
