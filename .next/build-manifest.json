@@ -7,6 +7,14 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/ContactPage": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Donate": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/MediaPage": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
