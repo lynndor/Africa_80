@@ -5,7 +5,7 @@ const FeatureItem = props => {
       <div className='feature-item'>
         <i className={feature_icon} />
         <h4>{title}</h4>
-        <p>{feature_content}</p>
+        <p>&quot;{feature_content}&quot;</p>
         <a href='#' className='primary-btn2'>
           Learn more
         </a>

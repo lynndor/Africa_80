@@ -9,6 +9,14 @@
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "plugins": [
+    [
+      "styled-jsx/babel",
+      {
+        "optimizeForSpeed": true
+      }
+    ]
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,6 +24,7 @@
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-image-timeline": "^1.0.11",
     "yarn": "^1.16.0"
   }
 }

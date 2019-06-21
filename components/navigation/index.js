@@ -2,43 +2,50 @@ import Link from "next/link";
 
 const Navi = () => {
   return (
-    <ul className="navbar-nav">
+    <ul className='navbar-nav'>
       <li>
-        <Link href="/">
+        <Link href='/'>
           <a> Home </a>
         </Link>
       </li>
       <li>
-        <Link href="/OurStoryPage">
+        <Link href='/OurStoryPage'>
           <a>Our Story</a>
         </Link>
       </li>
       <li>
-        <Link href="/AdvisoryBoardPage">
+        <Link href='/AdvisoryBoardPage'>
           <a>Advisory Board</a>
         </Link>
       </li>
       <li>
-        <Link href="/EventsPage">
+        <Link href='/EventsPage'>
           <a>Events</a>
         </Link>
       </li>
       <li>
-        <Link href="/MediaPage">
+        <Link href='/MediaPage'>
           <a>News &#38; Media</a>
         </Link>
       </li>
 
       <li>
-        <Link href="/ContactPage">
+        <Link href='/ContactPage'>
           <a>Contact Us</a>
         </Link>
       </li>
       <li>
-        <Link href="/Donate">
+        <Link href='/Donate'>
           <a>Donate</a>
         </Link>
       </li>
+
+      <style jsx>{`
+        a {
+          color: #000;
+          font-weight: 550;
+        }
+      `}</style>
     </ul>
   );
 };

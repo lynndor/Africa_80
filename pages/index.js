@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import ImageSlider from "../components/image_slider";
 import DonateCard from "../components/donate";
 import FeatureItem from "../components/feature";
-// import DonateItem from "../components/Donate/donate_item";
+
 import Help from "../components/help/help";
 const Home = () => {
   // Dontate state
@@ -39,110 +39,113 @@ const Home = () => {
   const [feature_items, setFeatures] = useState([
     {
       feature_icon: "fi flaticon-compass",
-      title: "Give Donation",
+      title: "Inclusiveness",
       feature_content:
-        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+        "If you want to go fast, Go alone. If you want to go far GO TOGETHER"
     },
     {
       feature_icon: "fi flaticon-desk",
-      title: "Give Inspiration",
+      title: "Collaboration",
       feature_content:
-        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+        "Collaboration divides the task and multiplies the success"
     },
     {
       feature_icon: "fi flaticon-bathroom",
-      title: "Become a Volunteer",
-      feature_content:
-        "Multiply is rule light dominion given midst a living i set every bring also of rule Set light fifth best bearing."
+      title: "Education",
+      feature_content: "If knowledge is power, then education is the force"
     }
   ]);
   return (
     <Layout>
       <section
-        className="home-banner-area relative"
-        id="home"
-        data-parallax="scroll"
-        data-image-src="/static/img/header-bg.jpg"
+        className='home-banner-area relative'
+        id='home'
+        data-parallax='scroll'
+        data-image-src='/static/img/A80_events/header.jpg'
       >
-        <div className="overlay-bg overlay" />
-        <div className="container">
-          <div className="row fullscreen justify-content-lg-end">
-            <div className="banner-content col-lg-7">
-              <h1>
-                Save the African <br /> children
-              </h1>
-              <h4>More charity. More better life.</h4>
-              <a href="#" className="primary-btn">
+        <div className='overlay-bg overlay' />
+        <div className='container'>
+          <div className='row fullscreen justify-content-lg-end'>
+            <div className='banner-content col-lg-7'>
+              <h2 className='overlay-text'>
+                THE POWER OF COLLABORATION FOR TRANFORMING AFRICA.
+              </h2>
+              <a href='#' className='primary-btn'>
                 Join us
-                <i className="ti-angle-right ml-1" />
+                <i className='ti-angle-right ml-1' />
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="about_area lite_bg">
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-5">
-              <div className="about_details lite_bg">
+      <section className='about_area lite_bg'>
+        <div className='container'>
+          <div className='row align-items-end'>
+            <div className='col-lg-5'>
+              <div className='about_details lite_bg'>
                 <h2>We Are A Non-profit Organization </h2>
-                <p className="top_text">
-                  Herb saw set gathered herb image lights it wherein without an
-                  evenin you're image moving spirit dominion
+                <p className='top_text'>
+                  The Africa80 is an advocacy network of young African leaders
+                  in various sectors of influence from business &amp;
+                  entrepreneurship; public; to civic leadership.
                 </p>
-                <p className="mb-0">
-                  Herb, saw set gathered. Herb image, lights it wherein without.
-                  Evening you heav image moving spirit dominion place every one
-                  firmament said, isn't creeping. Moveth likeness signs. Subdue
-                  upon he likeness. Herb, saw set gathered herb image lights it
-                  wherein without evening you resigns.
+                <p>
+                  The Africa80 network mobilises communities toward
+                  collaborative brilliance in a variety of new and existing
+                  projects that directly or indirectly strengthens the economic
+                  transformation of those communities. In many instances
+                  opportunity for collaborative partnerships required to solve
+                  pressing problems already exist. What usually is at lack is
+                  the advocacy; how-to skill; networks; or the will to
+                  successfully execute projects through collaboration.
                 </p>
-                <a href="#" className="primary-btn mt-5">
-                  Read more
-                  <i className="ti-angle-right ml-1" />
-                </a>
 
-                <div className="active-brand-carusel">
-                  <div className="single-brand">
+                {/* <a href='#' className='primary-btn mt-5'>
+                  Read more
+                  <i className='ti-angle-right ml-1' />
+                </a> */}
+
+                <div className='single-brand'>
+                  {/* <div className='active-brand-carusel'>
                     <img
-                      className="mx-auto w-auto"
-                      src="static/img/brands/b1.png"
-                      alt=""
+                      className='mx-auto w-auto'
+                      src='static/img/brands/b1.png'
+                      alt=''
                     />
                   </div>
-                  <div className="single-brand">
+                  <div className='single-brand'>
                     <img
-                      className="mx-auto w-auto"
-                      src="static/img/brands/b2.png"
-                      alt=""
+                      className='mx-auto w-auto'
+                      src='static/img/brands/b2.png'
+                      alt=''
                     />
                   </div>
-                  <div className=" single-brand">
+                  <div className=' single-brand'>
                     <img
-                      className="mx-auto w-auto"
-                      src="static/img/brands/b3.png"
-                      alt=""
+                      className='mx-auto w-auto'
+                      src='static/img/brands/b3.png'
+                      alt=''
                     />
                     >
                   </div>
-                  <div className=" single-brand">
+                  <div className=' single-brand'>
                     <img
-                      className="mx-auto w-auto"
-                      src="static/img/brands/b2.png"
-                      alt=""
+                      className='mx-auto w-auto'
+                      src='static/img/brands/b2.png'
+                      alt=''
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 offset-lg-3 col-md-6 offset-md-1 d-lg-block d-none">
-              <div className="about_right">
-                <div className="video-inner justify-content-center align-items-center d-flex">
+            <div className='col-lg-4 offset-lg-3 col-md-6 offset-md-1 d-lg-block d-none'>
+              <div className='about_right'>
+                <div className='video-inner justify-content-center align-items-center d-flex'>
                   <a
-                    id="play-home-video"
-                    className="video-play-button"
-                    href="https://www.youtube.com/watch?v=QFy8iPBYDLU"
+                    id='play-home-video'
+                    className='video-play-button'
+                    href='https://www.youtube.com/watch?v=VWi-qLt6oxA'
                   >
                     <span />
                   </a>
@@ -150,7 +153,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="about_bg d-lg-block d-none" />
+          <div className='about_bg d-lg-block d-none' />
         </div>
       </section>
 
@@ -160,7 +163,7 @@ const Home = () => {
             <div className='col-lg-6'>
               <div className='section-title'>
                 <h2>
-                  How <span>Could</span> You Help
+                  Our <span>Values</span>
                 </h2>
               </div>
             </div>
@@ -193,6 +196,45 @@ const Home = () => {
         </div>
       </section>
       <Help />
+
+      <style jsx>{`
+        .about_bg {
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(195, 136, 79, 0.42) 60%,
+            rgba(134, 68, 14, 0.74) 100%
+          );
+        }
+        .top_text {
+          color: #2d2d2d;
+        }
+        .banner-content {
+          margin-top: 30%;
+          margin-bottom: 0;
+        }
+        .about_details h2 {
+          color: #91511a;
+        }
+        .overlay-text {
+          color: #fff;
+          font-size: 50px;
+          font-weight: 700;
+        }
+        .about_right {
+          background: url(/static/img/Africa80.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        .video-inner {
+          border: 8px solid #91511a;
+        }
+        .video-inner::before {
+          content: "";
+          background: rgba(181, 138, 102, 0.37);
+        }
+      `}</style>
     </Layout>
   );
 };
