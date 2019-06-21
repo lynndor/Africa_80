@@ -90,7 +90,8 @@ const Home = () => {
                   in various sectors of influence from business &amp;
                   entrepreneurship; public; to civic leadership.
                 </p>
-                <p>
+                <h3>Our Mission</h3>
+                <p className='mission-text'>
                   The Africa80 network mobilises communities toward
                   collaborative brilliance in a variety of new and existing
                   projects that directly or indirectly strengthens the economic
@@ -215,6 +216,15 @@ const Home = () => {
         }
         .about_details h2 {
           color: #91511a;
+        }
+        .about_details h3 {
+          color: #91511a;
+          font-size: 35px;
+          margin-top: 40px;
+          margin-bottom: 15px;
+        }
+        .mission-text {
+          font-size: 16px;
         }
         .overlay-text {
           color: #fff;
