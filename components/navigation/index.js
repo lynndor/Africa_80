@@ -49,15 +49,15 @@ const Navi = () => {
 
         li:nth-child(1n)a:hover {
           color: #fff;
-          background: #89911a;
+          background: #1b1b33;
         }
         li:nth-child(2n)a:hover {
           color: #fff;
-          background: #284496;
+          background: #2d0e0e;
         }
         li:nth-child(3n)a:hover {
           color: #fff;
-          background: #b31200;
+          background: #110f1f;
         }
         li:nth-child(4n)a:hover {
           color: #fff;
@@ -65,12 +65,18 @@ const Navi = () => {
         }
         li:nth-child(5n)a:hover {
           color: #fff;
-          background: #91511a;
+          background: #001b09;
         }
         li:nth-child(6n)a:hover {
           color: #fff;
-          background: #91511a;
+          background: #1b1b33;
         }
+
+        // #1b1b33
+        // #110f1f
+        // #2d0e0e
+        // #001b09
+        // #504c0e
       `}</style>
     </ul>
   );

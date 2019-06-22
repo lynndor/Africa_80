@@ -2,20 +2,21 @@ const MediumCard = props => {
   const { number, text } = props.item;
   return (
     <div className='how-feature col-lg-3 col-md-6'>
-      <div className='feature-item'>
+      <div className='how-feature-item'>
         <h1 className='number'>{number}</h1>
         {/* <h4>{title}</h4> */}
         <p className='quote'>{text}</p>
       </div>
       <style jsx>{`
-        .feature-item {
-          background: #323358;
+        .how-feature-item {
+          background: #17172d;
           padding: 40px;
           text-align: center;
           margin-bottom: 30px;
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+          height: 350px;
         }
-        .feature-item .number {
+        .how-feature-item .number {
           background: #ffffff;
           padding: 18px;
           margin-bottom: 35px;
@@ -24,7 +25,7 @@ const MediumCard = props => {
           color: #30284c;
           border-radius: 55px;
         }
-        .feature-item h4 {
+        .how-feature-item h4 {
           color: #ffffff;
         }
         .quote {
@@ -34,9 +35,24 @@ const MediumCard = props => {
         span {
           color: #323358;
         }
-        .how-feature:nth-child(2n) {
-          display: none;
-          background: #black;
+        // Colors:
+        // #1b1b33
+        // #110f1f
+        // #2d0e0e
+        // #001b09
+        // #504c0e
+
+        .how-feature:nth-child(1) > .how-feature-item {
+          background: #110f1f;
+        }
+        .how-feature:nth-child(2) > .how-feature-item {
+          background: #2d0e0e;
+        }
+        .how-feature:nth-child(3) > .how-feature-item {
+          background: #001b09;
+        }
+        .how-feature:nth-child(4) > .how-feature-item {
+          background: #504c0e;
         }
       `}</style>
     </div>

@@ -9,7 +9,7 @@ const FeatureItem = props => {
       </div>
       <style jsx>{`
         .feature-item {
-          background: #323358;
+          background: #17172d;
           padding: 40px;
           text-align: center;
           margin-bottom: 30px;

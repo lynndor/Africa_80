@@ -175,12 +175,12 @@ const Home = () => {
             <div className='col-lg-6'>
               <div className='section-title'>
                 <h2>
-                  How <span>Do we do it?</span>
+                  How <span>do we do it?</span>
                 </h2>
               </div>
             </div>
           </div>
-          <div className='row feature_inner '>
+          <div className='row feature_inner how-feature '>
             {card_items.map((item, index) => (
               <MediumCard item={item} key={index} />
             ))}
