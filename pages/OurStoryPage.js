@@ -16,7 +16,9 @@ const OurStoryPage = () => {
           <div className='row align-items-end'>
             <div className='col-lg-5'>
               <div className='about_details lite_bg'>
-                <h2>Our story </h2>
+                <h2>
+                  Our <span>Story</span>
+                </h2>
                 <p className='mb-0'>
                   In 2015 during the World Economic Forum on Africa meeting in
                   Cape Town South Africa, 80 young Africans from across 30
@@ -68,7 +70,7 @@ const OurStoryPage = () => {
         </div>
         <style jsx>{`
           .about_bg {
-            background: #efefef;
+            background: #0e2b04;
             max-height: calc(100% - 5em);
           }
           .about_right {
@@ -82,6 +84,9 @@ const OurStoryPage = () => {
             left: -205px;
             box-shadow: 10px 10px 11px rgba(0, 0, 0, 0.2);
             border-top: 30px solid #fff;
+          }
+          .about_details h2 span {
+            color: #001b09;
           }
         `}</style>
       </section>
