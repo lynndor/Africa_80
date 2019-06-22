@@ -102,7 +102,7 @@ const Home = () => {
               <h2 className='overlay-text'>
                 THE POWER OF COLLABORATION FOR TRANFORMING AFRICA.
               </h2>
-              <a href='#' className='primary-btn'>
+              <a href='#' className='primary-btn join-us-btn'>
                 Join us
                 <i className='ti-angle-right ml-1' />
               </a>
@@ -188,27 +188,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='popular-cause-area section-gap-top'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-6'>
-              <div className='section-title'>
-                <h2>
-                  <span>Popular</span> Causes
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className='row'>
-            {donate_items.map((item, index) => (
-              <DonateCard item={item} key={index} />
-            ))}
-          </div>
-        </div>
-      </section>
-      <Help />
-
       <style jsx>{`
         .about_bg {
           background: linear-gradient(
@@ -258,6 +237,9 @@ const Home = () => {
         }
         .card-container:nth-child(even) {
           background-color: blue;
+        }
+        .join-us-btn:hover {
+          background: #2d0e0e;
         }
       `}</style>
     </Layout>
