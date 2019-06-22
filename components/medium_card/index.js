@@ -1,11 +1,11 @@
-const FeatureItem = props => {
-  const { feature_icon, title, feature_content } = props.item;
+const MediumCard = props => {
+  const { number, text } = props.item;
   return (
-    <div className='col-lg-4 col-md-6'>
+    <div className='how-feature col-lg-3 col-md-6'>
       <div className='feature-item'>
-        <i className={feature_icon} />
-        <h4>{title}</h4>
-        <p className='quote'>&quot;{feature_content}&quot;</p>
+        <h1 className='number'>{number}</h1>
+        {/* <h4>{title}</h4> */}
+        <p className='quote'>{text}</p>
       </div>
       <style jsx>{`
         .feature-item {
@@ -15,11 +15,11 @@ const FeatureItem = props => {
           margin-bottom: 30px;
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
         }
-        .feature-item i {
+        .feature-item .number {
           background: #ffffff;
-          padding: 22px;
+          padding: 18px;
           margin-bottom: 35px;
-          font-size: 56px;
+          font-size: 40px;
           display: inline-block;
           color: #30284c;
           border-radius: 55px;
@@ -34,9 +34,13 @@ const FeatureItem = props => {
         span {
           color: #323358;
         }
+        .how-feature:nth-child(2n) {
+          display: none;
+          background: #black;
+        }
       `}</style>
     </div>
   );
 };
 
-export default FeatureItem;
+export default MediumCard;

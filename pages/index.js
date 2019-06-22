@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import ImageSlider from "../components/image_slider";
 import DonateCard from "../components/donate";
 import FeatureItem from "../components/feature";
-
+import MediumCard from "../components/medium_card";
 import Help from "../components/help/help";
 const Home = () => {
   // Dontate state
@@ -43,7 +43,6 @@ const Home = () => {
   ]);
 
   // Feature State
-
   const [feature_items, setFeatures] = useState([
     {
       feature_icon: "fi flaticon-compass",
@@ -63,6 +62,31 @@ const Home = () => {
       feature_content: "If knowledge is power, then education is the force"
     }
   ]);
+
+  // Feature State
+  const [card_items, setCardContent] = useState([
+    {
+      number: "01",
+      text:
+        "Using an assortment of media products as platforms to advocate collaboration."
+    },
+    {
+      number: "02",
+      text:
+        "Identifying opportunities for collaboration at a local; national; and continental level."
+    },
+    {
+      number: "03",
+      text:
+        "Create new or join existing platforms to amplify the importance of collaboration."
+    },
+    {
+      number: "04",
+      text:
+        "Use the Annual Africa80 Summit as a platform to co-create collaborative solutions with youth across the continent and publish solutions identified."
+    }
+  ]);
+
   return (
     <Layout>
       <section
@@ -109,43 +133,6 @@ const Home = () => {
                   the advocacy; how-to skill; networks; or the will to
                   successfully execute projects through collaboration.
                 </p>
-
-                {/* <a href='#' className='primary-btn mt-5'>
-                  Read more
-                  <i className='ti-angle-right ml-1' />
-                </a> */}
-
-                <div className='single-brand'>
-                  {/* <div className='active-brand-carusel'>
-                    <img
-                      className='mx-auto w-auto'
-                      src='static/img/brands/b1.png'
-                      alt=''
-                    />
-                  </div>
-                  <div className='single-brand'>
-                    <img
-                      className='mx-auto w-auto'
-                      src='static/img/brands/b2.png'
-                      alt=''
-                    />
-                  </div>
-                  <div className=' single-brand'>
-                    <img
-                      className='mx-auto w-auto'
-                      src='static/img/brands/b3.png'
-                      alt=''
-                    />
-                    >
-                  </div>
-                  <div className=' single-brand'>
-                    <img
-                      className='mx-auto w-auto'
-                      src='static/img/brands/b2.png'
-                      alt=''
-                    />
-                  </div> */}
-                </div>
               </div>
             </div>
             <div className='col-lg-4 offset-lg-3 col-md-6 offset-md-1 d-lg-block d-none'>
@@ -183,6 +170,22 @@ const Home = () => {
             ))}
           </div>
         </div>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-lg-6'>
+              <div className='section-title'>
+                <h2>
+                  How <span>Do we do it?</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className='row feature_inner '>
+            {card_items.map((item, index) => (
+              <MediumCard item={item} key={index} />
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className='popular-cause-area section-gap-top'>
@@ -210,9 +213,9 @@ const Home = () => {
         .about_bg {
           background: linear-gradient(
             90deg,
-            rgb(255, 249, 249) 0%,
-            rgba(32, 3, 187, 0.42) 60%,
-            rgba(38, 33, 255, 0.7) 100%
+            rgb(255, 255, 255) 0%,
+            rgba(32, 3, 187, 0.31) 60%,
+            rgba(4, 0, 90, 0.76) 100%
           );
         }
         .top_text {
@@ -249,6 +252,12 @@ const Home = () => {
         }
         .video-inner {
           border: 8px solid #fff;
+        }
+        .section-title h2 span {
+          color: #323358;
+        }
+        .card-container:nth-child(even) {
+          background-color: blue;
         }
       `}</style>
     </Layout>
