@@ -79,9 +79,11 @@ const OurStoryPage = () => {
             z-index: 1;
             position: relative;
             bottom: 360px;
-            right: 0%;
+            right: auto;
             width: 674px;
             left: -205px;
+            top: auto;
+            border-radius: 0px;
             box-shadow: 10px 10px 11px rgba(0, 0, 0, 0.2);
             border-top: 30px solid #fff;
           }
