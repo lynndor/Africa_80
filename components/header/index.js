@@ -36,6 +36,7 @@ const Header = () => {
           background: #fff;
           box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
           top: 0px;
+          padding: 0px;
         }
         // Because flex properties aren't inherited, we need to redeclare these first
         // few properties so that content nested within behave properly.

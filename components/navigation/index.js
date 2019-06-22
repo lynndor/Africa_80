@@ -44,6 +44,32 @@ const Navi = () => {
         a {
           color: #000;
           font-weight: 550;
+          transition: all 0.3s ease-out;
+        }
+
+        li:nth-child(1n)a:hover {
+          color: #fff;
+          background: #89911a;
+        }
+        li:nth-child(2n)a:hover {
+          color: #fff;
+          background: #284496;
+        }
+        li:nth-child(3n)a:hover {
+          color: #fff;
+          background: #b31200;
+        }
+        li:nth-child(4n)a:hover {
+          color: #fff;
+          background: #ffc107;
+        }
+        li:nth-child(5n)a:hover {
+          color: #fff;
+          background: #91511a;
+        }
+        li:nth-child(6n)a:hover {
+          color: #fff;
+          background: #91511a;
         }
       `}</style>
     </ul>

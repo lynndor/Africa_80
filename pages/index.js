@@ -25,7 +25,15 @@ const Home = () => {
       total_donors: 89
     },
     {
-      image: "/static/img/causes/c3.jpg",
+      image: "/static/img/causes/c2.jpg",
+      tag: "Education",
+      card_title: "Above Hath Fifth Of Open Meat fourth shall meat cattle.",
+      amount_raised: "Raised: $1533",
+      goal_amount: "Goal: $2500",
+      total_donors: 89
+    },
+    {
+      image: "/static/img/causes/c2.jpg",
       tag: "Education",
       card_title: "Above Hath Fifth Of Open Meat fourth shall meat cattle.",
       amount_raised: "Raised: $1533",
@@ -202,9 +210,9 @@ const Home = () => {
         .about_bg {
           background: linear-gradient(
             90deg,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(195, 136, 79, 0.42) 60%,
-            rgba(134, 68, 14, 0.74) 100%
+            rgb(255, 249, 249) 0%,
+            rgba(32, 3, 187, 0.42) 60%,
+            rgba(38, 33, 255, 0.7) 100%
           );
         }
         .top_text {
@@ -215,10 +223,10 @@ const Home = () => {
           margin-bottom: 0;
         }
         .about_details h2 {
-          color: #91511a;
+          color: #4d447b;
         }
         .about_details h3 {
-          color: #91511a;
+          color: #323358;
           font-size: 35px;
           margin-top: 40px;
           margin-bottom: 15px;
@@ -236,13 +244,11 @@ const Home = () => {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
+          position: relative;
+          top: -200px;
         }
         .video-inner {
-          border: 8px solid #91511a;
-        }
-        .video-inner::before {
-          content: "";
-          background: rgba(181, 138, 102, 0.37);
+          border: 8px solid #fff;
         }
       `}</style>
     </Layout>
