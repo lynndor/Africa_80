@@ -8,7 +8,7 @@ const DonateCard = props => {
     total_donors
   } = props.item;
   return (
-    <div className='col-lg-4 col-md-6'>
+    <div className='col-lg-3 col-md-6'>
       <div className='card single-popular-cause'>
         <div className='card-body'>
           <figure>
@@ -28,9 +28,7 @@ const DonateCard = props => {
               </p>
             </div>
             <div className='d-flex justify-content-between donation align-items-center'>
-              <a href='#' className='primary-btn'>
-                donate
-              </a>
+              <h1 className='primary-btn'>01</h1>
               <p>
                 <span className='ti-heart mr-1' />
                 {total_donors} Donors
