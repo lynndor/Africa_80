@@ -1,6 +1,5 @@
 const ImageSlider = props => {
-  const { quote, author } = props.data;
-  console.log(props.data);
+  const { quote, author, photo } = props.data;
   return (
     <section className='banner-area relative'>
       <div className='overlay overlay-bg' />
@@ -14,7 +13,7 @@ const ImageSlider = props => {
       </div>
       <style jsx>{`
         .banner-area {
-          background: url(/static/img/collab_2.jpg);
+          background: url(${photo});
           background-size: contain;
           background-repeat: no-repeat;
         }
