@@ -14,9 +14,6 @@ const Footer = () => {
                   {new Date().getFullYear()} All rights reserved | This website
                   is made with{" "}
                   <i className="fa fa-heart-o" aria-hidden="true" />
-                  <a href="https://colorlib.com" target="_blank">
-                    CodeBrik
-                  </a>
                 </p>
               </div>
             </div>
@@ -34,7 +31,7 @@ const Footer = () => {
                     <span className="fa fa-location-arrow" />
                     Head Office
                   </p>
-                  <p>123, Main Street, Your City</p>
+                  <p>138 West Street, Sandton</p>
 
                   <p className="sm-head">
                     <span className="fa fa-phone" />
@@ -46,7 +43,7 @@ const Footer = () => {
                     <span className="fa fa-envelope" />
                     Email
                   </p>
-                  <p>free@infoexample.com</p>
+                  <p>info@africa80.org</p>
                 </div>
               </div>
             </div>

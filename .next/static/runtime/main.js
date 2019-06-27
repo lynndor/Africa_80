@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "C:\\Users\\Lindo\\Documents\\Dev\\Africa_80\\.next");
+      source_map_support_1.rewriteStacktrace(error, "C:\\belle\\my stuff 2018-06-14\\Africa_80\\.next");
       return error;
     }
   };
